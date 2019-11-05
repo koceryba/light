@@ -1,0 +1,10 @@
+<light-login class="login-form" *ngIf="loginPage"></light-login>
+<light-register class="login-form" *ngIf="!loginPage"></light-register>
+<div class="login-acc" *ngIf="loginPage">
+    <span>If you haven't acc </span>
+    <button class="btn btn-primary" (click)="loginPageCange()">Register</button>
+</div>
+<div class="login-acc" *ngIf="!loginPage">
+    <span>If you have acc </span>
+    <button class="btn btn-primary" (click)="loginPageCange()">Login</button>
+</div>

@@ -1,0 +1,5 @@
+<nav>
+    <a [routerLink]="['/']">Home</a>
+    <button *ngIf="authenticationService.currentUserValue" type="button" class="btn btn-primary" (click)="logout()">Logout</button>
+    <a *ngIf="!authenticationService.currentUserValue" [routerLink]="['/login']">Login</a>
+</nav>
